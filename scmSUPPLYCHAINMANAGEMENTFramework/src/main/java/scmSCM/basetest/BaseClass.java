@@ -17,7 +17,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import scmSCM.databaseutility.DataBaseUtility;
 import scmSCM.obectrespository.LoginPage;
-import scmSCM.webdriverutility.UtilityClassObject;
+
 import scmSCM.webdriverutility.WebDriverUtility;
 import scmSMC.fileutility.ExcelUtility;
 import scmSMC.fileutility.FileUtility;
@@ -33,8 +33,8 @@ public class BaseClass {
 	public ExcelUtility elib = new ExcelUtility();
 	public WebDriverUtility wlib = new WebDriverUtility();
    
-	public static  WebDriver sdriver = null;
-	public WebDriver driver = null;
+	public static  WebDriver sdriver ;
+	public WebDriver driver ;
 	@BeforeSuite(groups = {"regressionTest","smokeTest"})
 	public void configBS() {
 		System.out.println("======connect to DB, Report config=======");
@@ -62,7 +62,7 @@ public class BaseClass {
 	    }
 	
 	       sdriver = driver;
-	       UtilityClassObject.setDriver(driver);
+	       
         }
 
 

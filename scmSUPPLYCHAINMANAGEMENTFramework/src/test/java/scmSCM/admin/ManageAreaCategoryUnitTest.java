@@ -14,7 +14,6 @@ import scmSCM.obectrespository.ManageUnitPage;
 
 public class ManageAreaCategoryUnitTest extends BaseClass {
 	@Test(groups = "smokeTest")
-
 	public void ManageareaTest() throws EncryptedDocumentException, IOException, InterruptedException {
 
 		// Read test script data from excel sheet
@@ -38,7 +37,7 @@ public class ManageAreaCategoryUnitTest extends BaseClass {
 		ManageAreaPage ma = new ManageAreaPage(driver);
 		ma.getManageareaBtN().click();
 
-		wlib.scrollUsingJSE(0, 1000, driver);
+		wlib.scrollUsingJSE(0, 1500, driver);
 
 		// add area
 
@@ -82,7 +81,7 @@ public void ManagECategoryTest() throws EncryptedDocumentException, IOException 
 
 	mc.getCategoryBtn().click();
 
-	wlib.scrollUsingJSE(0, 1000, driver);
+	wlib.scrollUsingJSE(0, 1500, driver);
 
 	// add category
 
@@ -127,7 +126,7 @@ public void ManagEUnitTest() throws EncryptedDocumentException, IOException {
 	ManageUnitPage mu = new ManageUnitPage(driver);
 	mu.getManageunitBtn().click();
 
-	wlib.scrollUsingJSE(0, 500, driver);
+	wlib.scrollUsingJSE(0, 1000, driver);
 
 	// add unit
 	mu.getAddunitBtn().click();

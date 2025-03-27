@@ -22,7 +22,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import scmSCM.basetest.BaseClass;
-import scmSCM.webdriverutility.UtilityClassObject;
+
 
 public class ListImpClass implements ITestListener ,ISuiteListener {
 	
@@ -66,7 +66,7 @@ public class ListImpClass implements ITestListener ,ISuiteListener {
 	public void onTestStart(ITestResult result) {
 		System.out.println("=====>"+result.getMethod().getMethodName()+">==========START==========");
 		test = report.createTest(result.getMethod().getMethodName());
-		UtilityClassObject.setTest(test);
+		
 		
 		test.log(Status.INFO,result.getMethod().getMethodName()+"=====>STARTED<=====");
 	}

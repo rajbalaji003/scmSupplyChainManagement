@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="scmSCM.listenerutility.ListImpClass"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+      </run>
+    </groups>
     <classes>
       <class name="scmSCM.Manufacturer.AddProductManageStockTest">
         <methods>
@@ -17,6 +19,17 @@
           <include name="configAC"/>
         </methods>
       </class> <!-- scmSCM.Manufacturer.AddProductManageStockTest -->
+      <class name="scmSCM.admin.ManageAreaCategoryUnitTest">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="ManagEUnitTest"/>
+        </methods>
+      </class> <!-- scmSCM.admin.ManageAreaCategoryUnitTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

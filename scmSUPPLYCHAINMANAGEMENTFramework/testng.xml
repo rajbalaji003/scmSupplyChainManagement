@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="scmSCM.Retailer.MyOrderNewOrderTest"/>
-      <class name="scmSCM.admin.ManageAreaCategoryUnitTest"/>
-      <class name="scmSCM.Manufacturer.AddProductManageStockTest"/>
+      <class name="scmSCM.admin.ManageAreaCategoryUnit_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

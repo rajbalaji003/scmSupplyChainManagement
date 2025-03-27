@@ -3,17 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scmSCM.Retailer.MyOrder">
+      <class name="scmSCM.admin.ManageAreaCategoryUnitTest">
         <methods>
-          <include name="MyORder"/>
+          <include name="ManageareaTest"/>
           <include name="configAM"/>
           <include name="configBS"/>
           <include name="configBC"/>
           <include name="configBM"/>
           <include name="configAS"/>
           <include name="configAC"/>
+          <include name="ManagEUnitTest"/>
         </methods>
-      </class> <!-- scmSCM.Retailer.MyOrder -->
+      </class> <!-- scmSCM.admin.ManageAreaCategoryUnitTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,7 +9,7 @@ import scmSCM.basetest.BaseClass;
 import scmSCM.obectrespository.AddProductPage;
 import scmSCM.obectrespository.LoginPage;
 import scmSCM.obectrespository.ManageStockPage;
-import scmSCM.webdriverutility.UtilityClassObject;
+
 
 public class AddProductManageStockTest extends BaseClass {
 
@@ -17,7 +17,7 @@ public class AddProductManageStockTest extends BaseClass {
 
 	public void AdDProductTest() throws EncryptedDocumentException, IOException {
 		
-		UtilityClassObject.getTest().log(Status.INFO, "read data from Excel");
+		
 
 		String productname = elib.getDataFromExcel("addproduct", 1, 1).toString();
 		String price = elib.getDataFromExcel("addproduct", 1, 2).toString();
